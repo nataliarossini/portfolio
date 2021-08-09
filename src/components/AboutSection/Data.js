@@ -1,4 +1,12 @@
 import Coffee from '../images/coffee.jpg'
+import Css from '../images/icons/css.png'
+import Figma from '../images/icons/figma.png'
+import Html from '../images/icons/html.png'
+import Js from '../images/icons/js.png'
+import Postgre from '../images/icons/postg.png'
+import Rails from '../images/icons/rails.png'
+import Ruby from '../images/icons/ruby.png'
+import React from '../images/icons/react.png'
 export const aboutObj = {
     id: 'about',
     headline: 'about',
@@ -8,5 +16,6 @@ export const aboutObj = {
     imgStart: false,
     img: Coffee,
     alt: 'coffee',
-    primary: true
+    primary: true,
+    icons: [Css, Html, Js, React, Rails, Ruby, Postgre, Figma]
 };

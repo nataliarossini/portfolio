@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import{FaBars} from 'react-icons/fa';
+import { VscMenu } from "react-icons/vsc"
 import { NavContainer, Nav, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks } from './NavbarElements';
 import { animateScroll as scroll } from 'react-scroll';
+import { useScrollPosition } from '../hooks/useScrollPosition';
+
+
 const Navbar = ({ toggle }) => {
     const[scrollNav, setScrollNav] = useState(false);
 
@@ -21,9 +24,23 @@ const Navbar = ({ toggle }) => {
         scroll.scrollToTop();
     };
 
+    const [isSticky, setSticky] = useState(false)
+    
+    const stickyNav = () => {
+        if(window.scrollY >= 80){
+            setSticky(true)
+        } else {
+            setSticky(false)
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', stickyNav)
+    }, []);
+
     return (
         <>
-            <Nav scrollNav={scrollNav}>
+            <Nav scrollNav={scrollNav} stickyNav={isSticky}>
                 <NavLogo onClick={toggleHome}>
                     NR
                 </NavLogo>
@@ -61,7 +78,7 @@ const Navbar = ({ toggle }) => {
                         </NavItem>
                     </NavMenu>
                     <MobileIcon onClick={toggle} >
-                        <FaBars />
+                        <VscMenu />
                     </MobileIcon>
                 </NavContainer>
             </Nav>

@@ -3,10 +3,9 @@ import styled from 'styled-components'
 
 export const Button = styled(Link)`
     background: transparent;
-    padding: 0.8rem 1.2rem;
-    ${'' /* border-radius: 2px; */}
+    padding: 1rem 1.2rem;
     white-space: nowrap;
-    font-size: ${({fontBig}) => (fontBig ? '1.5rem' : '1.2rem')};
+    ${'' /* font-size: ${({fontBig}) => (fontBig ? '1.5rem' : '1.2rem')}; */}
     font-family: 'Work Sans', sans-serif;
     text-transform: uppercase;
     outline: none;
@@ -14,13 +13,11 @@ export const Button = styled(Link)`
     cursor: pointer;
     display: flex;
     justify-content: center;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
     &:hover {
-        transition: all 0.2s ease-in-out;
-    }
-    @media screen and (max-width: 768px) {
-        display: none;
+        background-color: rgba(225,166,129, .1);
+        transition: all 0.5s ease-in-out;
     }
 
 `

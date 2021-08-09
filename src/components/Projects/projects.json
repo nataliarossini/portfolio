@@ -3,11 +3,11 @@
         "id": 1,
         "title": "The Good Dev",
         "subtitle": "Final project for Le Wagon",
-        "description": "...",
+        "description": "Fully functional app created in only 2 weeks by a team of 3 for our final project. The Good Dev is a platform to make volunteering process easy for developers as well as programming more accessible for organisations and communities lacking a budget. The roles would be all over the word with the option to work abroad and exchange cultures. Built with: Ruby on Rails, Javascript, PostgreSQL, HTML and CSS whilst also working as a team on Github/Heroku.",
         "img": "https://images.unsplash.com/photo-1566241477600-ac026ad43874?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1460&q=80",
         "gif": "...",
-        "link": "...",
-        "repo": "..."
+        "link": "http://www.thegooddev.co.uk/",
+        "repo": "https://github.com/nataliarossini/The-Good-Dev"
     },
     {
         "id": 2,

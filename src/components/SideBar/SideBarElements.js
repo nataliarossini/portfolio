@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link as LinkS} from 'react-scroll'
-import { FaTimes } from "react-icons/fa";
+import { VscClose } from "react-icons/vsc"
 
 export const SideBarContainer = styled.aside`
     position: fixed;
@@ -18,8 +18,8 @@ export const SideBarContainer = styled.aside`
     opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
     top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
 `
-export const CloseIcon = styled(FaTimes)`
-    color: rgba(0, 0, 0, 0.8);
+export const CloseIcon = styled(VscClose)`
+    color: rgba(0, 0, 0, 0.6);
 `
 export const Icon = styled.div`
     position: absolute;

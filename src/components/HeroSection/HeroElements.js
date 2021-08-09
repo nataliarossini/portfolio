@@ -82,6 +82,10 @@ export const HeroContent = styled.div`
             font-size: 1.5rem;
             text-align: center;
         }
+
+        @media screen and (max-width: 750px) {
+            margin-bottom: 4rem;
+        }
     }
     @media screen and (max-width: 690px) {
         top: 20vh;
@@ -92,6 +96,10 @@ export const HeroBtnWrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    
+    @media screen and (max-width: 750px) {
+        display: none;
+    }
 `
 
 export const HeroImg = styled.img`

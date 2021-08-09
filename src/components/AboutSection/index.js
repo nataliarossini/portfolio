@@ -1,22 +1,26 @@
 import React from 'react'
 import { Button } from '../ButtonElement'
-import { Column2, Img, ImgWrap, AboutContainer, AboutRow, AboutWrapper, Column1, TextWrapper, Heading, Icons, BtnWrap } from './AboutElements'
+import { Column2, Img, ImgWrap, AboutContainer, AboutRow, AboutWrapper, Column1, TextWrapper, Heading, Icons, Icon, BtnWrap } from './AboutElements'
 
-const AboutSection = ({id, imgStart, headline, description, subTitle, buttonLabel, img, alt, primary}) => {
+const AboutSection = ({id, imgStart, headline, description, subTitle, buttonLabel, img, alt, primary, icons}) => {
     return (
         <>
             <AboutContainer id={id} >
                <AboutWrapper>
                    <AboutRow imgStart={imgStart}>
                        <Column1>
-                           <TextWrapper>
                                <Heading>
                                 {headline}
                                </Heading>
+                           <TextWrapper>
                                <p>{description}</p>
                                <h3>{subTitle}</h3>
                                <Icons>
-                                    
+                               {icons.map(icon => {
+                                    return (
+                                        <Icon key={Math.random()} src={icon} alt='icons' />
+                                    )
+                               })}  
                                </Icons>
                                <BtnWrap>
                                  <Button to='contact'

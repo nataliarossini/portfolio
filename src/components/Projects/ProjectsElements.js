@@ -10,7 +10,7 @@ export const DisplayOver = styled.div`
     z-index: 2; 
     transition: background-color 350ms ease;
     background-color: transparent;
-    padding: 30%;
+    padding: 1.5rem;
     box-sizing: border-box;
 `
 
@@ -20,28 +20,35 @@ export const Hover = styled.div`
     transition: opacity 350ms ease;
 `
 export const ProjectH2 = styled.h2`
+    font-family: 'Work Sans', sans-serif;
     transform: translate3d(0,50px,0);
     transition: transform 350ms ease;
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-bottom: 10px
 `
 
 export const ProjectP = styled.div`
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: .04rem;
     transform: translate3d(0,50px,0);
     transition: transform 350ms ease;
     font-size: 1rem;
-    text-align: center;
+    ${'' /* text-align: center; */}
 `
 
 
 
 export const ProjectsContainer = styled.div`
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     background: #F9F6F5;
+    padding: 0 24px;
+    overflow: hidden;
+    
 
     @media screen and (max-width: 768px) {
         height: 100vh;
@@ -52,44 +59,45 @@ export const ProjectsContainer = styled.div`
 `
 
 export const ProjectsWrapper = styled.div`
-    max-width: 1000px;
+    ${'' /* max-width: 1000px; */}
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     grid-gap: 8px;
     margin-bottom: 32px;
+    margin-top: 32px;
+    
 
     @media screen and (max-width: 1000px) {
         grid-template-columns: 1fr;
     }
     @media screen and (max-width: 560px) {
         grid-template-columns: 1fr;
-        padding: 0 20px;
+        ${'' /* padding: 0 20px; */}
     }
 `
 
 export const ProjectsCard = styled.div`
     color: #fff;
-    ${'' /* position: relative;
-    width: 300px;
-    height: 30vh;
-    cursor: pointer; */}
     position: relative;
     display: flex;
     flex-shrink: 0;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 25vh;
-    width: 320px;
-    ${'' /* min-width: 250px; */}
+    height: 35vh;
+    width: 420px;
     background: ${props => `url(${props.background}) no-repeat top center`};
     background-size: cover;
     overflow: hidden;
     transition: all 0.2s ease-in-out;
+    filter:  grayscale(1);
+    ${'' /* -webkit-filter: grayscale(0.8); */}
+    -webkit-transition: all .8s ease-in-out;
 
     &:hover {
+        filter: none;
         transform: scale(1.02);
         transition: all 0.2s ease-in-out;
         cursor: pointer;
@@ -108,18 +116,39 @@ export const ProjectsCard = styled.div`
         opacity: 1;
     }
 
+    @media screen and (max-width: 1200px) {
+        height: 25vh;
+        width: 320px;
+    }
+
     @media screen and (max-width: 480px) {
         ${'' /* padding: 100%; */}
+        ${'' /* width: 300px; */}
+    }
+
+    @media screen and (max-width: 320px) {
+        width: 200px;
     }
 `
 
 export const ProjectsH1 = styled.h1`
-    font-size: 2.5rem;
-    color: black;
-    margin-bottom: 32px;
-
+    font-family: 'Work Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    margin-bottom: 48px;
+    margin-top: 8%;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.1;
+    color: rgba(0, 0, 0, 0.6);
+    ${'' /* align-self: flex-start;
+    padding: 0 15px; */}
+    @media screen and (max-width: 768px) {
+        margin-bottom: 24px;
+    }
+    
     @media screen and (max-width: 480px) {
-        font-size: 2rem;
+        font-size: 32px;
     }
 
 `

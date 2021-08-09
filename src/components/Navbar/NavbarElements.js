@@ -9,6 +9,9 @@ export const Nav = styled.nav`
     justify-content: center;
     font-size: 1rem;
     position: sticky;
+    ${'' /* position: ${({sticky}) => (sticky ? "sticky" : "relative")}; */}
+    ${'' /* transform: ${({sticky}) => (sticky ? "translateY(100%)" : "translateY(0)")}; */}
+    ${'' /* transition: transform 400ms ease-in; */}
     top: 0;
     z-index: 10;
 
@@ -25,18 +28,20 @@ export const NavContainer = styled.div`
     padding: 0 24px;
     max-width: 1100px;
 `
-export const NavLogo = styled(LinkS)`
+export const NavLogo = styled.div`
     color: rgba(0, 0, 0, 0.8);
     justify-self: flex-start;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 2rem;
     display: flex;
     align-items: center;
-    margin-left: 24px;
     text-decoration: none;
-    ${'' /* position: absolute;
-    top: 2rem;
-    left: 0px; */}
+    font-family: 'Major Mono Display', monospace;
+    letter-spacing: -4px;
+    ${'' /* display: none; */}
+    ${'' /* position: absolute; */}
+    ${'' /* top: 2rem; */}
+    left: 0px;
 `
 export const MobileIcon = styled.div`
     display: none;
@@ -50,7 +55,7 @@ export const MobileIcon = styled.div`
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
         cursor: pointer;
-        color: rgba(0, 0, 0, 0.8);
+        color: rgba(0, 0, 0, 0.6);
     }
 `  
 export const NavMenu = styled.ul`
