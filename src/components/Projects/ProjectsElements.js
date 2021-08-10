@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-
+import { BsPlusCircle } from "react-icons/bs";
 
 export const DisplayOver = styled.div`
     height: 100%;
@@ -20,24 +20,42 @@ export const Hover = styled.div`
     transition: opacity 350ms ease;
 `
 export const ProjectH2 = styled.h2`
-    font-family: 'Work Sans', sans-serif;
     transform: translate3d(0,50px,0);
     transition: transform 350ms ease;
     font-size: 1.5rem;
-    margin-bottom: 10px
+    margin-bottom: 1rem;
+    border-bottom: 0.5px solid white;
 `
 
 export const ProjectP = styled.div`
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 600;
+    font-weight: bolder;
     letter-spacing: .04rem;
     transform: translate3d(0,50px,0);
     transition: transform 350ms ease;
     font-size: 1rem;
-    ${'' /* text-align: center; */}
 `
 
+export const SeeProject = styled.div`
+    color: white;
+    display: flex;
+    position: absolute;
+    bottom: 2rem;;
+    align-items: center;
+    transform: translate3d(0,50px,0);
+    transition: transform 350ms ease;
+    p{
+        margin-left: 8px;
+        transition: 0.4s;
+        &:hover{
+            color: #e1a681;
+        }
+    }
+`
 
+export const PlusCircle = styled(BsPlusCircle)`
+    color: #e1a681;
+    margin-left: 8px;
+`
 
 export const ProjectsContainer = styled.div`
     min-height: 100vh;
@@ -48,6 +66,7 @@ export const ProjectsContainer = styled.div`
     background: #F9F6F5;
     padding: 0 24px;
     overflow: hidden;
+    font-family: 'Work Sans', sans-serif;
     
 
     @media screen and (max-width: 768px) {
@@ -104,7 +123,7 @@ export const ProjectsCard = styled.div`
     }
     
     &:hover ${DisplayOver} {
-        background-color: rgba(0,0,0, .5);
+        background-color: rgba(0,0,0, .6);
     }
     &:hover ${ProjectH2} {
         transform: translate3d(0,0,0);
@@ -114,6 +133,9 @@ export const ProjectsCard = styled.div`
     }
     &:hover ${Hover} {
         opacity: 1;
+    }
+    &:hover ${SeeProject} {
+        transform: translate3d(0,0,0);
     }
 
     @media screen and (max-width: 1200px) {

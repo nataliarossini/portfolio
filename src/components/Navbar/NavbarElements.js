@@ -10,7 +10,7 @@ export const Nav = styled.nav`
     font-size: 1rem;
     position: sticky;
     ${'' /* position: ${({sticky}) => (sticky ? "sticky" : "relative")}; */}
-    ${'' /* transform: ${({sticky}) => (sticky ? "translateY(100%)" : "translateY(0)")}; */}
+    ${'' /* transform: ${({hideOnScroll}) => (hideOnScroll ? "sticky" : "translateY(0)")}; */}
     ${'' /* transition: transform 400ms ease-in; */}
     top: 0;
     z-index: 10;

@@ -62,11 +62,19 @@ export const ExternalLink = styled(FiExternalLink)`
     color: rgba(0, 0, 0, 0.6);
     cursor: pointer;
     font-size: 24px;
+    transition: 0.2s;
+    &:hover{
+        color: #e1a681;
+    }
 `
 export const SourceCode = styled(FiGithub)`
     color: rgba(0, 0, 0, 0.6);
     cursor: pointer;
     font-size: 24px;
+    transition: 0.2s;
+    &:hover{
+        color: #e1a681;
+    }
 `
 
 export const ModalLinks = styled.span`

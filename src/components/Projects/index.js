@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import { ProjectsContainer, ProjectsH1, ProjectsWrapper, ProjectH2, ProjectsCard, ProjectP, Hover, DisplayOver  } from './ProjectsElements';
+import { ProjectsContainer, ProjectsH1, ProjectsWrapper, ProjectH2, ProjectsCard, ProjectP, Hover, DisplayOver, SeeProject, PlusCircle } from './ProjectsElements';
 import Data from './projects.json'
 import ProjectModal from '../Modals/ProjectModal';
+
 const Projects = () => {
     const [openModal, setOpenModal] = useState('');
 
@@ -22,6 +23,10 @@ const Projects = () => {
                                 <Hover>
                                     <ProjectH2>{project.title}</ProjectH2>
                                     <ProjectP>{project.subtitle}</ProjectP>
+                                    <SeeProject>
+                                        <PlusCircle /> 
+                                        <p>More details</p>
+                                    </SeeProject>
                                 </Hover>
                             </DisplayOver>
                         </ProjectsCard>
