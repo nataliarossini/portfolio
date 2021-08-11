@@ -10,12 +10,13 @@ import React from '../images/icons/react.png'
 export const aboutObj = {
     id: 'about',
     headline: 'about',
-    description: 'I’m a full stack developer London based who loves coding, solving challenges and creating new things! I’ve created this place to document some thoughts about my journey in web development, to share a bit about me and my potfolio. Check out some of my projects here!',
+    description: "Hey there! I’m a London based full stack developer who graduated at Le Wagon. I have experience working with Ruby on Rails, Postgresql, Javascript ES6, CSS/HTML and more. I’m passionate about learning new technologies and improving my skill set. I’m a team player and in my previous experience working on a team we’ve collaborated using continuous integration approach and continuous deployment to Heroku. Currently I’ve been learning more about data structures and algorithms in order to write scalable code, I’m also learning React which in fact I’ve used to create this page from scratch.",
     subTitle: 'skills',
     buttonLabel: 'resume',
     imgStart: false,
     img: Coffee,
     alt: 'coffee',
     primary: true,
-    icons: [Css, Html, Js, React, Rails, Ruby, Postgre, Figma]
+    icons: [Css, Html, Js, React, Rails, Ruby, Postgre, Figma],
+    resume: 'https://drive.google.com/file/d/1vNHoYG441jNnFUbapqLBysxzgs31uQgp/view?usp=sharing'
 };

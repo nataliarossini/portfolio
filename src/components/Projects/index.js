@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { ProjectsContainer, ProjectsH1, ProjectsWrapper, ProjectH2, ProjectsCard, ProjectP, Hover, DisplayOver, SeeProject, PlusCircle } from './ProjectsElements';
 import Data from './projects.json'
 import ProjectModal from '../Modals/ProjectModal';
+import { Fade } from "react-awesome-reveal";
 
 const Projects = () => {
     const [openModal, setOpenModal] = useState('');
@@ -13,11 +14,14 @@ const Projects = () => {
 
     return (
         <ProjectsContainer id='projects'>
-            <ProjectsH1>Projects</ProjectsH1>
+            <Fade delay={600} triggerOnce>
+                <ProjectsH1>Projects</ProjectsH1>
+            </Fade>
             <ProjectsWrapper>
             { Data.map(project => {
                 return (
                     <div key={project.id}>
+                    <Fade delay={1000} cascade triggerOnce>
                         <ProjectsCard onClick={() => {setOpenModal(project.id)}} background={project.img}>
                             <DisplayOver>
                                 <Hover>
@@ -30,6 +34,7 @@ const Projects = () => {
                                 </Hover>
                             </DisplayOver>
                         </ProjectsCard>
+                        </Fade>
                         {openModal === project.id && <ProjectModal 
                             id={project.id}
                             title={project.title}

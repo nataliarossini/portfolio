@@ -1,18 +1,21 @@
 import React from 'react'
-import { Button } from '../ButtonElement'
+import { ButtonHref } from '../ButtonHrefElement';
 import { Column2, Img, ImgWrap, AboutContainer, AboutRow, AboutWrapper, Column1, TextWrapper, Heading, Icons, Icon, BtnWrap } from './AboutElements'
+import { Fade, Slide } from "react-awesome-reveal";
 
-const AboutSection = ({id, imgStart, headline, description, subTitle, buttonLabel, img, alt, primary, icons}) => {
+const AboutSection = ({id, imgStart, headline, description, subTitle, buttonLabel, img, alt, icons, resume}) => {
     return (
         <>
             <AboutContainer id={id} >
                <AboutWrapper>
                    <AboutRow imgStart={imgStart}>
                        <Column1>
+                        <Fade delay={900} cascade={true} triggerOnce>
                                <Heading>
                                 {headline}
                                </Heading>
                            <TextWrapper>
+                           <Fade delay={1000} cascade={true} triggerOnce>
                                <p>{description}</p>
                                <h3>{subTitle}</h3>
                                <Icons>
@@ -23,23 +26,20 @@ const AboutSection = ({id, imgStart, headline, description, subTitle, buttonLabe
                                })}  
                                </Icons>
                                <BtnWrap>
-                                 <Button to='contact'
-                                    smooth={true}
-                                    duration={500}
-                                    spy={true}
-                                    exact="true"
-                                    offset={-80}
-                                    primary={primary ? 1 : 0}
-                                 >
+                                 <ButtonHref href={resume} target='_blank'>
                                     {buttonLabel}
-                                 </Button>
+                                 </ButtonHref>
                                </BtnWrap>
+                               </Fade>
                            </TextWrapper>
+                       </Fade>
                        </Column1>
                        <Column2>
-                           <ImgWrap>
-                               <Img src={img} alt={alt}/>
-                           </ImgWrap>
+                            <Slide direction={"up"} duration={1000} triggerOnce>
+                                <ImgWrap>
+                                    <Img src={img} alt={alt}/>
+                                </ImgWrap>
+                            </Slide>
                        </Column2>
                    </AboutRow>
                </AboutWrapper> 

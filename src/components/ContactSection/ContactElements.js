@@ -7,7 +7,6 @@ export const ContactContainer = styled.section`
     justify-content: center;
     align-items: center;
     text-align: center;
-    ${'' /* margin-top: 10%; */}
 `
 export const ContactWrapper = styled.div`
     max-width: 800px;
@@ -28,7 +27,6 @@ export const ContactH2 = styled.h2`
     margin: 0 auto;
     font-size: 32px;
     color: black;
-    ${'' /* margin-bottom: 32px; */}
     font-family: 'Work Sans', sans-serif;
     text-transform: uppercase;
     letter-spacing: .2rem;
@@ -55,7 +53,6 @@ export const ContactP = styled.p`
 `
 
 export const ImgWrap = styled.div`
-    ${'' /* max-width: 80px; */}
     height: 64px;
     margin: auto;
     width: 50%;
@@ -65,7 +62,6 @@ export const ImgWrap = styled.div`
 export const Img = styled.img`
     width: 64px;
     margin: auto;
-    ${'' /* padding-right: 0; */}
 
     @media screen and (max-width: 480px) {
         width: 48px;

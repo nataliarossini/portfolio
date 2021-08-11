@@ -1,4 +1,13 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+export const animationHero1 = keyframes`
+    from {top: -100%;}
+    to {bottom: 100%;}
+`
+export const animationHero2 = keyframes`
+    from {top: 100%;}
+    to {bottom: 0%;}
+`
 
 export const HeroContainer = styled.div`
     ${'' /* background: #F3EDEC; */}
@@ -22,6 +31,9 @@ export const HeroBg = styled.div`
     width: 50%;
     height: 100%;
     overflow: hidden;
+    animation-name: ${animationHero1};
+    animation-duration: 1.5s;
+    ${'' /* animation-iteration-count: infinite; */}
     @media screen and (max-width: 750px) {
         width: 100%;
     }
@@ -37,6 +49,8 @@ export const HeroBg2 = styled.div`
     width: 50%;
     height: 100%;
     overflow: hidden;
+    animation-name: ${animationHero2};
+    animation-duration: 1.5s;
     @media screen and (max-width: 750px) {
         display: none;
     }

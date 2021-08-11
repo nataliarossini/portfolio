@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { HeroContainer, HeroBg, HeroBg2, HeroContent, HeroBtnWrapper, HeroImg, MblImg } from './HeroElements';
 import { Button } from '../ButtonElement';
 import Img from '../images/image.jpg'
+import { Fade } from "react-awesome-reveal";
 
 const HeroSection = () => {
     const [hover, setHover] = useState(false);
@@ -13,6 +14,7 @@ const HeroSection = () => {
     return (
         <HeroContainer id='hero'>
             <HeroBg>
+                <Fade delay={1400} direction={'up'} duration={800} triggerOnce>
                 <HeroContent>
                     <h1>
                         Hello, I'm Natalia
@@ -31,14 +33,17 @@ const HeroSection = () => {
                             exact='true'
                             offset={-80}
                         >
-                         { hover ? 'say hello 👋' : 'say hello' }
+                         Say Hello
                         </Button>
                     </HeroBtnWrapper>
                     <MblImg src={Img} />
                 </HeroContent>
+                </Fade>
             </HeroBg>
             <HeroBg2>
-                <HeroImg src={Img} />
+                <Fade direction={'down'} delay={1500} duration={1000} triggerOnce>
+                    <HeroImg src={Img} />
+                </Fade>
             </HeroBg2>
         </HeroContainer>
     )

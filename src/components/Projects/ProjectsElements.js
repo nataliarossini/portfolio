@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { BsPlusCircle } from "react-icons/bs";
 
+
 export const DisplayOver = styled.div`
     height: 100%;
     left: 0;
@@ -61,13 +62,12 @@ export const ProjectsContainer = styled.div`
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     background: #F9F6F5;
     padding: 0 24px;
     overflow: hidden;
     font-family: 'Work Sans', sans-serif;
-    
 
     @media screen and (max-width: 768px) {
         height: 100vh;
@@ -112,7 +112,6 @@ export const ProjectsCard = styled.div`
     overflow: hidden;
     transition: all 0.2s ease-in-out;
     filter:  grayscale(1);
-    ${'' /* -webkit-filter: grayscale(0.8); */}
     -webkit-transition: all .8s ease-in-out;
 
     &:hover {
@@ -143,11 +142,6 @@ export const ProjectsCard = styled.div`
         width: 320px;
     }
 
-    @media screen and (max-width: 480px) {
-        ${'' /* padding: 100%; */}
-        ${'' /* width: 300px; */}
-    }
-
     @media screen and (max-width: 320px) {
         width: 200px;
     }
@@ -163,8 +157,7 @@ export const ProjectsH1 = styled.h1`
     font-size: 32px;
     line-height: 1.1;
     color: rgba(0, 0, 0, 0.6);
-    ${'' /* align-self: flex-start;
-    padding: 0 15px; */}
+    
     @media screen and (max-width: 768px) {
         margin-bottom: 24px;
     }
