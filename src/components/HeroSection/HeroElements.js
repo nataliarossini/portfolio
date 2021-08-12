@@ -134,6 +134,7 @@ export const MblImg = styled.img`
     display: none;
     
     @media screen and (max-width: 750px) {
+        object-fit: cover;
         display: flex;
         max-width: 16em;
         align-self: center;
