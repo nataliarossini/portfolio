@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { ProjectsContainer, ProjectsH1, ProjectsWrapper, ProjectH2, ProjectsCard, ProjectP, Hover, DisplayOver, SeeProject, PlusCircle } from './ProjectsElements';
-import Data from './projects.json'
 import ProjectModal from '../Modals/ProjectModal';
 import { Fade } from "react-awesome-reveal";
+import { projectsData } from './projectsData';
 
 const Projects = () => {
     const [openModal, setOpenModal] = useState('');
@@ -18,7 +18,7 @@ const Projects = () => {
                 <ProjectsH1>Projects</ProjectsH1>
             </Fade>
             <ProjectsWrapper>
-            { Data.map(project => {
+            { projectsData.map(project => {
                 return (
                     <div key={project.id}>
                     <Fade delay={1000} cascade triggerOnce>

@@ -16,7 +16,7 @@ const Contact = () => {
                         </Zoom>
                     </ImgWrap>
                     <ContactH2>Contact</ContactH2>
-                    <ContactP> Whether you have an idea for a project or just want to chat, feel free to shoot me an email! </ContactP>
+                    <ContactP> Whether you'd like to work with me, have an idea for a project or just want to chat, feel free to shoot me an email! </ContactP>
                     <BtnWrap>
                         <ButtonHref href="mailto:nataliarossini3@gmail.com">
                             Let's talk
