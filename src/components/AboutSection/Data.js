@@ -10,7 +10,7 @@ import React from '../images/icons/react.png'
 export const aboutObj = {
     id: 'about',
     headline: 'about',
-    description: "Hey there! I’m a London based full stack developer who graduated at Le Wagon. I have experience working with Ruby on Rails, Postgresql, Javascript ES6, CSS/HTML and more. I’m passionate about learning new technologies and improving my skill set. I’m a team player and in my previous experience working on a team we’ve collaborated using continuous integration approach and continuous deployment to Heroku. Currently I’ve been learning more about data structures and algorithms in order to write scalable code, I’m also learning React which in fact I’ve used to create this page from scratch.",
+    description: "Hey there! \n I’m a London based full stack developer who graduated at Le Wagon. I have experience working with Ruby on Rails, Postgresql, Javascript ES6, CSS/HTML and more. I’m passionate about learning new technologies and improving my skill set. I’m a team player and in my previous experience working on a team we’ve collaborated using continuous integration approach and continuous deployment to Heroku. Currently I’ve been learning more about data structures and algorithms in order to write scalable code, I’m also learning React which in fact I’ve used to create this page from scratch.",
     subTitle: 'skills',
     buttonLabel: 'resume',
     imgStart: false,

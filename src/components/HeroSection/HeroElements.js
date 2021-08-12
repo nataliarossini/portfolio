@@ -91,6 +91,7 @@ export const HeroContent = styled.div`
         font-size: 24px;
         text-align: right;
         max-width: 600;
+        letter-spacing: .1rem;
 
         @media screen and (max-width: 768px) {
             font-size: 1.5rem;

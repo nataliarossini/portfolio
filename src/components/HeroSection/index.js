@@ -17,10 +17,10 @@ const HeroSection = () => {
                 <Fade delay={1400} direction={'up'} duration={800} triggerOnce>
                 <HeroContent>
                     <h1>
-                        Hello, I'm Natalia
+                        Hello, I'm Natalia.
                     </h1>
                     <p>
-                        I'm a full stack developer
+                        Full stack developer
                     </p>
                     <HeroBtnWrapper>
                         <Button 
