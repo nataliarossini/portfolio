@@ -7,6 +7,7 @@ import Postgre from '../images/icons/postg.png'
 import Rails from '../images/icons/rails.png'
 import Ruby from '../images/icons/ruby.png'
 import React from '../images/icons/react.png'
+import Clang from '../images/icons/c.png'
 export const aboutObj = {
     id: 'about',
     headline: 'about',
@@ -17,6 +18,6 @@ export const aboutObj = {
     img: Coffee,
     alt: 'coffee',
     primary: true,
-    icons: [Css, Html, Js, React, Rails, Ruby, Postgre, Figma],
+    icons: [Html, Css, Js, React, Rails, Ruby, Clang, Postgre, Figma],
     resume: 'https://drive.google.com/file/d/1vNHoYG441jNnFUbapqLBysxzgs31uQgp/view?usp=sharing'
 };
