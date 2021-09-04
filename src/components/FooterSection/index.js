@@ -14,7 +14,7 @@ const Footer = () => {
                         <SocialIconLink href="https://www.linkedin.com/in/nataliarossini/" target="_blank" aria-label="Linkedin">
                             <FaLinkedinIn />
                         </SocialIconLink>
-                        <SocialIconLink href="https://www.linkedin.com/in/nataliarossini/" target="_blank" aria-label="Instagram">
+                        <SocialIconLink href="https://www.instagram.com/rossininatalia/" target="_blank" aria-label="Instagram">
                             <FaInstagram />
                         </SocialIconLink>
                         <SocialIconLink href="https://www.linkedin.com/in/nataliarossini/" target="_blank" aria-label="Twitter">
