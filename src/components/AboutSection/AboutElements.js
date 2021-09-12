@@ -93,9 +93,12 @@ export const Icons = styled.div`
 `
 
 export const Icon = styled.img`
-    height: 40px;
+    max-height: 40px;
+    @media screen and (max-width: 375px) {
+        max-height: 30px;
+    }
     @media screen and (max-width: 320px) {
-        height: 20px;
+        max-height: 20px;
     }
 `
 
