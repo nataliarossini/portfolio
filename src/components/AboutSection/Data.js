@@ -19,5 +19,5 @@ export const aboutObj = {
     alt: 'coffee',
     primary: true,
     icons: [Html, Css, Js, React, Rails, Ruby, Clang, Postgre, Figma],
-    resume: 'https://drive.google.com/file/d/1vNHoYG441jNnFUbapqLBysxzgs31uQgp/view?usp=sharing'
+    resume: 'https://drive.google.com/file/d/1RNhBqWFgHakvQJqLHDtuRky1lewx1TIc/view?usp=sharing'
 };
