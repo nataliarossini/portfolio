@@ -11,7 +11,7 @@ import Clang from '../images/icons/c.png'
 export const aboutObj = {
     id: 'about',
     headline: 'about',
-    description: "Hey there! \n I’m a London based full stack developer graduated at Le Wagon. I have experience working with Ruby on Rails, Postgresql, Javascript ES6, CSS/HTML and more. I'm team player and in my previous experience working on a team we’ve collaborated using continuous integration approach and continuous deployment with Heroku. Passionate about learning new technologies and improving my skill set, recently I’ve been learning more about data structures and algorithms in order to write scalable code. I’m also interested in React which in fact I’ve used to create this page from scratch.",
+    description: `Hey there!\n I’m a Full Stack Engineer at KiyanPay in London, UK. I work daily with Javascript, more precisely Next.js (the best React framework 😜). My latest challenge is to help with the company rebranding and to create accessible and SEO friendly code. In my spare time I'm currently learning Solidity as I have great interest in Blockchain.`,
     subTitle: 'skills',
     buttonLabel: 'resume',
     imgStart: false,
